@@ -1,0 +1,8 @@
+**/*.class
+/**/.settings/
+**/bin
+**/.project
+**/.classpath
+**/target
+**/.factorypath
+.gitignore.swp

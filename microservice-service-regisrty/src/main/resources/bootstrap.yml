@@ -1,0 +1,10 @@
+spring:
+  application: 
+    name: microservice-service-registry
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false  
+        
+server:
+  port: 8761

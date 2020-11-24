@@ -1,0 +1,11 @@
+#eureka:
+#  client:
+#    service-url:
+#       defaultZone : http://localhost:8280/eureka
+spring:
+  application: 
+    name: microservice-identity
+  
+        
+server:
+  port: 8090
