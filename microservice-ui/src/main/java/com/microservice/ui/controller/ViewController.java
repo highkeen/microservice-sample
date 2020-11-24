@@ -65,7 +65,10 @@ public class ViewController {
 	@GetMapping("/welcome")
 	String welcomeView(Model model,@RequestParam(required = false)String token) {
 		
-		if(StringUtils.isEmpty(token) || !userService.verity(token)) {
+		if(StringUtils.isEmpty(token)) {
+			return "redirect:/index";
+		}
+		else if(!userService.verity(token)) {
 			return "redirect:/index";
 		}
 		return "welcome_view";

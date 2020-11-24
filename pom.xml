@@ -26,7 +26,6 @@
 		<module>microservice-ui</module>
 		<module>microservice-identity</module>
 		<module>microservice-service-regisrty</module>
-
 	</modules>
 
 	<dependencies>

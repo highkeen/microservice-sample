@@ -68,7 +68,7 @@ public class UserService {
 			ResponseEntity<Map> response = restTempalte.exchange(request, Map.class);
 			
 			if(response.getStatusCode().is2xxSuccessful()) {
-				return Boolean.getBoolean(response.getBody().get("status").toString()); 
+				return Boolean.parseBoolean(response.getBody().get("status").toString()); 
 			}
 			
 			return false;
